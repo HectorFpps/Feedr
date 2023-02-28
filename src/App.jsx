@@ -1,34 +1,24 @@
-import './App.css'
-import Navbar from './Components/Navbar'
-import Comment from './Components/Comment'
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Navbar from './components/navbar.component.jsx';
+import Home from './components/home.component.jsx';
+import Profile from './components/profile.component.jsx';
+import CreateUser from './components/createUser.component.jsx';
+import Comment from './components/comment.component.jsx';
+
 
 function App() {
-
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <div className='wrapper'>
-        <div className='feed'>
-          <select className='dropdown' name="Sort By" id="SortBy" placeholder='Sort By'>
-            <option value="recent">Most Recent</option>
-            <option value="liked">Most Liked</option>
-            <option value="disliked">Most Disliked</option>
-            <option value="commented">Most Commented</option>
-          </select>
-
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
-          <Comment />
-
-        </div>
-        <div className='trending'>
-          Trending Topic
-        </div>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" component={<Profile/>} />
+        <Route path="/createUser" component={<CreateUser/>} />
+      </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;
