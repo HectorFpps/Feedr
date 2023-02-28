@@ -30,19 +30,32 @@ body, html{
 
 .search{
     background-color: white;
-    height: 3vh;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 4vh;
     width: 15vw;
-    border-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
     border: none;
-    padding-left: 1vw
+    padding: 0;
+    padding-left: 1vw;
 }
 
 .search-div button{
-    height: 3vh;
-    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    margin: 0;
+    padding: 0 1vw;
+    background-color: rgba(85, 153, 180, 0.5);
     border: none;
+}
+
+.search-div button:hover{
+    background-color:rgba(63, 102, 117, 0.5);
+    cursor: pointer;
 }
 
 .profile{
@@ -54,4 +67,9 @@ body, html{
     width: 35px;
     border: solid 2px rgba(0,0,0,1);
     border-radius: 100%;
+    transition: all 500ms;
+}
+
+.profile:hover{
+    scale: 1.1;
 }
