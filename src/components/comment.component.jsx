@@ -21,7 +21,7 @@ export default class Comment extends React.Component {
                     <span className='username'>{this.state.username}</span>
                 </div>
                 <div className="comment">
-                    <span>{this.state.content}</span>
+                    <p>{this.state.content}</p>
                 </div>
                 <div className='interaction'>
                     <button className='like'>

@@ -4,16 +4,24 @@ body, html{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-    background-color: rgba(85, 153, 180, 0.5);
+    background-color: rgba(85, 153, 180, 1);
     box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.1);
 }
 
 .navbar-left{
     margin: 1vh 1vw;
+    color: rgb(32, 63, 77);
+    scale: 1.3;
 }
 
 .navbar-right{
@@ -40,7 +48,12 @@ body, html{
     padding-left: 1vw;
 }
 
+.search:focus{
+    outline-width: 0;
+}
+
 .search-div button{
+    color: white;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
@@ -49,23 +62,24 @@ body, html{
     height: 4vh;
     margin: 0;
     padding: 0 1vw;
-    background-color: rgba(85, 153, 180, 0.5);
+    background-color: rgb(44, 100, 126);
     border: none;
+    transition: all 500ms;
 }
 
 .search-div button:hover{
-    background-color:rgba(63, 102, 117, 0.5);
+    background-color:rgb(35, 63, 75);
     cursor: pointer;
 }
 
 .profile{
-    color: black;
+    color: rgb(32, 63, 77);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
     width: 35px;
-    border: solid 2px rgba(0,0,0,1);
+    border: solid 2px rgb(44, 100, 126);
     border-radius: 100%;
     transition: all 500ms;
 }

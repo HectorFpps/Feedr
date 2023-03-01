@@ -41,7 +41,7 @@ export default class Create extends React.Component {
                     <span className='username'>{/* TODO: Person username*/}@User</span>
                 </div>
                 <div className="comment">
-                    <input type="text" id="comment-input" class="input-comment" placeholder="This is your comment"></input>
+                    <input type="text" id="comment-input" className="input-comment" placeholder="This is your comment"></input>
                 </div>
                 </div>
                 <button type="submit">Submit</button>
