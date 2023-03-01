@@ -10,8 +10,8 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
     const picture = req.body.picture;
     const username = req.body.username;
-    const likes = Number(req.body.likes);
-    const dislikes = Number(req.body.dislikes);
+    const likes = 0;
+    const dislikes = 0;
     const content = req.body.content;
     const date = Date.parse(req.body.date);
 

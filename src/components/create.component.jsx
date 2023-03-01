@@ -6,8 +6,6 @@ import axios from 'axios'
 //TO DO:
 // - Add a button to create a comment in create.component.jsx
 // - Rename the comment.css to also include create and link it correcly to both comment.component.jsx and create.component.jsx
-// - Create a post request to the backend to create a comment
-// - Create a get request to the backend to get the comments
 
 export default class Create extends React.Component {
 
@@ -23,8 +21,6 @@ export default class Create extends React.Component {
             "picture": "none",
             "username": "User",
             "content": inputValue,
-            "likes": 0,
-            "dislikes": 0,
             "date": "2023-02-28T22:25:01.012Z" 
         };
 
