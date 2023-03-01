@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Comment from './comment.component';
+import Create from './create.component';
 import './style/home.css';
 import axios from 'axios';
 
@@ -39,6 +40,8 @@ export default class Home extends React.Component {
                         <option value="commented">Most Commented</option>
                     </select>
                     { this.commentList() }
+                    {/* TODO: Create a footer like functionality for the create */}
+                    <Create />
                 </div>
                 <div className='trending'>
                     Trending Topic
