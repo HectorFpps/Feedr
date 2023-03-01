@@ -2,10 +2,8 @@ import './style/comment.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Banner from './banner.component'
 
-//TO DO:
-// - Add a button to create a comment in create.component.jsx
-// - Rename the comment.css to also include create and link it correcly to both comment.component.jsx and create.component.jsx
 
 export default class Create extends React.Component {
 
@@ -27,6 +25,7 @@ export default class Create extends React.Component {
         axios.post("http://localhost:27017/posts/add", data)
           .then(response => {
             console.log(response)
+            location.reload();
           })
           .catch(error => {
             console.log(error)
@@ -42,10 +41,10 @@ export default class Create extends React.Component {
                     <span className='username'>{/* TODO: Person username*/}@User</span>
                 </div>
                 <div className="comment">
-                    <input type="text" id="comment-input" placeholder="This is your comment"></input>
+                    <input type="text" id="comment-input" class="input-comment" placeholder="This is your comment"></input>
                 </div>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit" >Submit</button>
             </form>
         );
     }

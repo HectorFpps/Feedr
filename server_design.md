@@ -1,6 +1,4 @@
 # Frontend
-## Components (from lowest to highest)
-### 
 
 # Backend Routes
 ## Users
