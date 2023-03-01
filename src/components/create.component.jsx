@@ -44,7 +44,7 @@ export default class Create extends React.Component {
                     <input type="text" id="comment-input" class="input-comment" placeholder="This is your comment"></input>
                 </div>
                 </div>
-                <button type="submit" >Submit</button>
+                <button type="submit">Submit</button>
             </form>
         );
     }

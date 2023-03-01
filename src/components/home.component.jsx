@@ -23,7 +23,7 @@ export default class Home extends React.Component {
     }
 
     commentList() {
-        return this.state.posts.map(currentcomment => {
+        return this.state.posts.slice().reverse().map(currentcomment => {
             return <Comment props = {{username:currentcomment.username, likes:currentcomment.likes, content:currentcomment.content, dislikes:currentcomment.dislikes}}/>;
         })
     }
