@@ -8,9 +8,12 @@ cd feedr
 npm install
 npm run dev
 
-# Create New Git Branch
+# Git Commands
 git branch (nombre)  -> Crear
 git checkout -b (nombre) -> Entrar y Crear en nuevo Branch
+git add *
+git commit -m "mensaje"
+git push origin (branch)
 
 # To do
 TO DO in create.component.jsx:
