@@ -8,6 +8,10 @@ cd feedr
 npm install
 npm run dev
 
+# Create New Git Branch
+git branch (nombre)  -> Crear
+git checkout -b (nombre) -> Entrar y Crear en nuevo Branch
+
 # To do
 TO DO in create.component.jsx:
  - Add a button to create a comment in create.component.jsx
