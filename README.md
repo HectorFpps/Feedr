@@ -21,3 +21,6 @@ TODO in home.component.jsx:
 TODO in backend:
  - Should no be able to create a post with a specific number of likes/dislikes, backend should handle it automatically withoud the user being able to set it
  - /posts/update/:id should be able to update the likes/dislikes. Should be able to update the likes/dislikes by 1
+
+TODO in frontend (create.component.jsx):
+ - style the create component
