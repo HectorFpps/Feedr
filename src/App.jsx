@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Navbar from './components/navbar.component.jsx';
-import Home from './components/home.component.jsx';
-import Profile from './components/profile.component.jsx';
-import CreateUser from './components/createUser.component.jsx';
-import Comment from './components/comment.component.jsx';
+import Navbar from './components/Navbar.jsx';
+import Home from './components/Home.jsx';
+import Profile from './components/Profile.jsx';
+import Authentification from './components/Authentification.jsx';
+import Comment from './components/Comment.jsx';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" component={<Profile/>} />
-        <Route path="/createUser" component={<CreateUser/>} />
+        <Route path="/authentification" component={<Authentification />} />
       </Routes>
     </Router>
   )

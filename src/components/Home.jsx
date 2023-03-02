@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Comment from './comment.component';
-import Create from './create.component';
+import Comment from './Comment';
+import Create from './Create';
 import './style/home.css';
 import axios from 'axios';
-import Trending from './trending.component';
+import Trending from './Trending';
 
 export default class Home extends React.Component {
     constructor(props) {
