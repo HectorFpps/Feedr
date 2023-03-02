@@ -56,8 +56,8 @@
     background-color: rgba(0,0,0,0.1);
     border: none;
     height: 4vh;
-    width: 100%;
     border-radius: 5px;
+    padding: 0 2vh;
 }
 
 .input-wrapper input:focus{
@@ -85,6 +85,7 @@
 }
 
 .go{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
