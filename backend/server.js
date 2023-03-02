@@ -17,10 +17,16 @@ mongoose.connect(uri, {
     useUnifiedTopology: true,
 });
 
+
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log("MongoDB database connection established successfully");
 })
+
+connection.on('error', err => {
+    console.log('MongoDB connection error. Please make sure MongoDB is running. ' + err);
+    process.exit();
+});
 
 const usersRouter = require('./routes/users');
 const postsRouter = require('./routes/posts');
