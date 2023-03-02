@@ -19,7 +19,7 @@ export default class Create extends React.Component {
             "picture": "none",
             "username": "User",
             "content": inputValue,
-            "date": "2023-02-28T22:25:01.012Z" 
+            "date": new Date() 
         };
 
         axios.post("http://localhost:27017/posts/add", data)
@@ -31,7 +31,7 @@ export default class Create extends React.Component {
             console.log(error)
           });
       }
-      
+
 
     render() {
         return (

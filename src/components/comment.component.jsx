@@ -10,6 +10,7 @@ export default class Comment extends React.Component {
             content: props.props.content,
             likes: props.props.likes,
             dislikes: props.props.dislikes,
+            date: new Date(props.props.date)
         }
     }
 
@@ -19,7 +20,7 @@ export default class Comment extends React.Component {
                 <div className='user'>
                     <a className='profile-pic' href='#'><img src='src/Assets/profilepic.jpg'/></a>
                     <span className='username'>{this.state.username}</span>
-                    <span className='date'>02/03/2023 - 15:55</span>
+                    <span className='date'>{this.state.date.getFullYear()}/{this.state.date.getMonth() + 1}/{this.state.date.getDate()} - {this.state.date.getHours()}:{this.state.date.getMinutes()}</span>
                 </div>
                 <div className="comment">
                     <p>{this.state.content}</p>
