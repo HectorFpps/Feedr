@@ -21,3 +21,18 @@
     cursor: pointer;
     background-color: rgb(44, 100, 126);
 }
+
+.create-wrapper{
+    background-color: rgba(85, 153, 180, 1);
+    position: fixed;
+    top: 70vh;
+    left: 4vw;
+}
+
+.create-wrapper form {
+    display: none;
+  }
+  
+  .create-wrapper form.show-form {
+    display: block;
+  }
