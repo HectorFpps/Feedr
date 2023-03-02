@@ -8,18 +8,24 @@ export default class Authentification extends React.Component {
             <div className="auth-wrapper">
                 <form>
                     <h3>Login Here</h3>
+                    <div className="form-wrapper">
+                        <div className="input-wrapper">
+                            <label htmlFor="username">Username</label>
+                            <input type="text" placeholder="Email or Phone" id="username" />
+                        </div>
+                        
+                        <div className="input-wrapper">
+                            <label htmlFor="password">Password</label>
+                            <input type="password" placeholder="Password" id="password" />
+                        </div>
+                        
 
-                    <label htmlFor="username">Username</label>
-                    <input type="text" placeholder="Email or Phone" id="username" />
-
-                    <label htmlFor="password">Password</label>
-                    <input type="password" placeholder="Password" id="password" />
-
-                    <button>Log In</button>
-                    <div className="social">
-                      <div className="go"><i className="fab fa-google"></i>  Google</div>
-                      <div className="fb"><i className="fab fa-facebook"></i>  Facebook</div>
+                        <button>Log In</button>
+                        <div className="social">
+                          <div className="go"><i className="fab fa-google"></i>  Google</div>
+                        </div>
                     </div>
+                    
                 </form>
             </div>
         );
