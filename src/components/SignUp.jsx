@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './style/Authentification.css'
 
-export default class Authentification extends React.Component {
+export default class SignUp extends React.Component {
     render() {
         return (
             <div className="auth-wrapper">
                 <form>
-                    <h3>Login Here</h3>
+                    <h3>Sign Up</h3>
                     <div className="form-wrapper">
                         <div className="input-wrapper">
                             <label htmlFor="username">Username</label>
@@ -20,10 +20,10 @@ export default class Authentification extends React.Component {
                         </div>
                         
 
-                        <button>Log In</button>
-                        <div className="social">
-                          <div className="go"><i className="fab fa-google"></i>  Google</div>
-                        </div>
+                        <button>Sign Up</button>
+                        <div className="go">Google</div>
+                        
+                        <span>Already have an account? <Link to="/log-in">Log In</Link></span>
                     </div>
                     
                 </form>
