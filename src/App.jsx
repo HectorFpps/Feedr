@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" component={<Profile/>} />
-        <Route path="/authentification" component={<Authentification />} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/authentification" element={<Authentification />} />
       </Routes>
     </Router>
   )
