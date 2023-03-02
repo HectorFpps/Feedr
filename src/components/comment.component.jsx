@@ -19,6 +19,7 @@ export default class Comment extends React.Component {
                 <div className='user'>
                     <a className='profile-pic' href='#'><img src='src/Assets/profilepic.jpg'/></a>
                     <span className='username'>{this.state.username}</span>
+                    <span className='date'>02/03/2023 - 15:55</span>
                 </div>
                 <div className="comment">
                     <p>{this.state.content}</p>
