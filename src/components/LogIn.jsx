@@ -11,7 +11,7 @@ export default class LogIn extends React.Component {
                     <div className="form-wrapper">
                         <div className="input-wrapper">
                             <label htmlFor="username">Username</label>
-                            <input type="text" placeholder="Email or Phone" id="username" />
+                            <input type="text" placeholder="Username" id="username" />
                         </div>
                         
                         <div className="input-wrapper">
