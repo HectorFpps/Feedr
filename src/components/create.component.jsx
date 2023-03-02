@@ -2,7 +2,6 @@ import './style/comment.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import Banner from './banner.component'
 
 
 export default class Create extends React.Component {
