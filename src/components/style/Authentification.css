@@ -42,3 +42,14 @@
     flex-direction: column;
     gap: .5vh;
 }
+
+.input-wrapper input{
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    height: 3vh;
+    width: 100%;
+}
+
+.input-wrapper input:focus{
+    outline: none;
+}
